@@ -28,6 +28,12 @@ body {
     font-size: large;
 }
 
+.texto:hover {
+    background-color: rgb(87, 216, 248);
+}
+
+
+
 .boton {
     text-align: center;
 }

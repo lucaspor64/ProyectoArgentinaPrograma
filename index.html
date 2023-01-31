@@ -6,8 +6,8 @@
     <title>Mi Curriculum</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <script src='main.js'></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script type="text/javascript" src='js/main.js'></script>
 </head>
 <body>
     <header class="header">
@@ -72,6 +72,16 @@
         </p>
     </article>
 
+    <section id="demo" class="texto">
+        <h2 id="demotitulo" class="subtitulo">Sección JavaScript</h2>
+        <p id="demotexto">
+            Esta sección esta orientada a demostrar las capacidades de JavaScript en el desarrollo de páginas web así como su influencia en el comportamiento de las mismas.
+        </p>
+        <button onclick=clickcount() type="button" id="botonjs1">Este boton le dirá cuantas veces lo ha presionado: 0 veces</button><br>
+        <button onclick=randomcolor() type="button" id="botonjs2">Este boton cambiará de color cada vez que lo presione.</button><br>
+        <button onclick=givedate() type="button" id="botonjs3">Este boton le dira la fecha al apretarlo</button><br>
+    </section>
+
     <form id="formulario" class="texto" action="" target="_self" method="get" autocomplete="on" autocapitalize="words">
         <h2 class="subtitulo">Formulario:</h2>
         <p>Aquí se le presenta un formulario en el que usted puede poner sus datos en caso de querer contactarse personalmente conmigo:</p>
@@ -95,7 +105,7 @@
         <labelf for="otros">Otros motivos</labelf>
         
         <div class="boton">
-            <input type="submit" value="Entregar">
+            <input id="botonentrega" type="submit" value="Entregar">
         </div>
         
     </form>
