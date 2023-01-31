@@ -6,58 +6,111 @@
     <title>Mi Curriculum</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/estilos.css'>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>Curriculum Vitae</h1>
-    <div>
-        <img src="img/imagen.jpeg" alt="Foto personal">
-    </div>
+    <header class="header">
+        <h1 class="titulo">Curriculum Vitae</h1>
+    </header>
+
+    <section id="imagen" >
+        <img class="imagen" src="img/imagen.jpeg" alt="Foto personal">
+    </section>
     
-    <div>
-        <h2>Datos de contacto:</h2>
-        <ul>
+    <section id="contacto" class="texto">
+        <h2 class="subtitulo">Datos de contacto:</h2>
+        <ul class="contenido">
             <li>Nombre: Lucas Ezequiel Poratti</li>
             <li>Edad: 21 años</li>
             <li>Dirección: Costa Rica 5791, CABA, Argentina</li>
             <li>Teléfono: +5401123894555</li>
             <li>E-mail: lucaspor64@gmail.com</li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h2>Educación:</h2>
-        <ul>
+    <section id="educacion" class="texto">
+        <h2 class="subtitulo">Educación:</h2>
+        <ul class="contenido">
             <li>Secundario: Instituto San Pablo Apostol, bachillerato en Ciencias sociales y Humanidades 2015-2019</li>
             <li>Extra Curricular: Certificado FCE Nivel de Inglés C1</li>
             <li>Universidad: Facultad de Ingeniería de la Universidad de Buenos Aires</li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h2>Idioma:</h2>
-        <ul>
+    <section id="idioma" class="texto">
+        <h2 class="subtitulo">Idioma:</h2>
+        <ul class="contenido">
             <li>Español nativo</li>
             <li>Inglés fluido</li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h2>Inclinaciones e interéses:</h2>
-        <ul>
+    <section id="intereses" class="texto">
+        <h2 class="subtitulo">Inclinaciones e interéses:</h2>
+        <ul class="contenido">
             <li>Ciencais exactas y naturales</li>
             <li>Computación y programación</li>
             <li>Educación y aprender</li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <h2>Experiencia profesional:</h2>
-        <ul>
+    <section id="experiencia" class="texto">
+        <h2 class="subtitulo">Experiencia profesional:</h2>
+        <ul class="contenido">
             <li>Tutorías particular de matemáticas ~2 años</li>
             <li>Crowdworking ~2 años</li>
             <li>Transcripción de textos, idiomas inglés e Español</li>
         </ul>
-    </div>
+    </section>
+
+    <article id="about-yo" class="texto">
+        <h2 class="subtitulo">Sobre Mi:</h2>
+        <p>Soy Lucas, tengo 21 años y estudio la carrera de ingeniería química en la UBA. Mis mejores cualidades se dan en las áreas de ciencias y Computación, pero
+            también me gusta aprender cosas nuevas y superarme a mi mismo. Actualmente estoy cursando un curso de introducción al desarrollo front end. A ese efecto este
+            sitio web funciona de demo técnica sobre algunos de los conocimientos adquiridos.
+        </p>
+    </article>
+
+    <form id="formulario" class="texto" action="" target="_self" method="get" autocomplete="on" autocapitalize="words">
+        <h2 class="subtitulo">Formulario:</h2>
+        <p>Aquí se le presenta un formulario en el que usted puede poner sus datos en caso de querer contactarse personalmente conmigo:</p>
+        <label for="email">E-mail: </label>
+        <input required type="email" id="email" name="email"><br>
+        <label for="name">Nombre: </label>
+        <input required type="text" id="name" name="name"><br>
+        <label for="surname">Apellido: </label>
+        <input required type="text" id="surname" name="surname"><br>
+        <label for="phone">Teléfono: </label>
+        <input required type="tel" id="phone" name="phone"><br>
+
+        <p>Que razón de contacto tiene?</p>
+        <input type="checkbox" id="trabajo" name="trabajo">
+        <label for="trabajo">Oferta de Trabajo</label><br>
+        <input type="checkbox" id="pasantia" name="pasantia">
+        <label for="pasantia">Oferta de Pasantía</label><br>
+        <input type="checkbox" id="estudio" name="estudio">
+        <label for="estudio">Oferta de estudio</label><br>
+        <input type="checkbox" id="otros" name="otros">
+        <labelf for="otros">Otros motivos</labelf>
+        
+        <div class="boton">
+            <input type="submit" value="Entregar">
+        </div>
+        
+    </form>
+
+    <article id="about-sitio" class="texto">
+        <h2 class="subtitulo">Sobre el sitio:</h2>
+        <p>Este curriculum se presenta en forma de un sitio web con estructura formulada en HTML, estilizado en CSS y con funcionalidades añadidas con JavaScript. También
+            es adaptativo y se tuvo en cuenta la usablidad, que mediante media queries se adecua a pantallas de celular o escritorio.
+
+        </p>
+    </article>
+
+    <footer class="pie">
+        <h4 class="subtitulo">Pie de página</h4>
+        <p>Este sitio web fue hecho como proyecto final de la primera parte de Argentina Pograma 4.0 por Lucas Poratti a fines educativos.</p>
+    </footer>
 </body>
 </html>
