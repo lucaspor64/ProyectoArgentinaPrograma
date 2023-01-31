@@ -1,4 +1,4 @@
-
+* {box-sizing: border-box;}
 
 body {
     background-image: url('background.jpg');
@@ -38,19 +38,44 @@ body {
     text-align: center;
 }
 
-.imagen {
-    border-radius: 50%;
-    width: 50%;
-    height: auto;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .pie {
     background-color: rgb(127, 182, 204);
     color: rgb(163, 73, 204);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
     font-size: medium;
+}
+
+@media screen and (max-width: 599px) {
+    #imagen {
+        border-radius: 50%;
+       width: 50%;
+       height: auto;
+       align-content: center;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .column1{
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }
+
+    .column2{
+        width: 50%;
+        float: left;
+        padding: 20px;
+    }
+
+    #imagen {
+        border-radius: 50%;
+        width: 12%;
+        height: 12%;
+        align-content: center;
+        margin: 12px;
+        float: right;
+    }
 }
